@@ -1,9 +1,4 @@
-import { DiscordIcon } from "@/components/icons/discord";
 import { GithubIcon } from "@/components/icons/github";
-import { LinkedInIcon } from "@/components/icons/linkedin";
-import { TwitchIcon } from "@/components/icons/twitch";
-import { XIcon } from "@/components/icons/x";
-import { YouTubeIcon } from "@/components/icons/youtube";
 import type React from "react";
 
 export type Image = {
@@ -42,52 +37,25 @@ export type SiteConfig = {
 
 export const CONFIG: SiteConfig = {
 	meta: {
-		title: "Gaia Rossi",
+		title: "Hartface",
 		description: "This is my portfolio.",
 		image: {
-			src: "/headshot.jpg",
-			alt: "Gaia Rossi",
+			src: "/pfp.jpg",
+			alt: "Hartface",
 		},
 	},
-	name: "Gaia Rossi",
-	headshot: "/headshot.jpg",
-	title: "Software Developer",
-	description: `I'm Gaia Rossi, an Italian front-end developer with over a decade of experience in crafting beautiful, user-friendly websites. 
-  I specialize in HTML, CSS, JavaScript, and modern frameworks like React and Vue.js. 
-  Beyond coding, I have a passion for traveling and discovering new cultures, which often inspires my work. 
-  I also love to cook and experiment with new dishes from around the world. 
-  This blend of technical skills and diverse experiences allows me to bring a unique and creative perspective to every project I undertake.`,
+	name: "Hartface",
+	headshot: "/pfp.jpg",
+	title: "Technical Artist & Pipeline Developer",
+	description: `I'm Hartface, an add-on developer and technical artist.
+	I provide solutions for problems and make things more efficient.
+	I would rather like you to look at my work below.`,
 	socials: [
 		{
 			platform: "GitHub",
-			link: "https://github.com/",
+			link: "https://github.com/hartface",
 			icon: <GithubIcon />,
-		},
-		{
-			platform: "LinkedIn",
-			link: "https://www.linkedin.com/",
-			icon: <LinkedInIcon />,
-		},
-		{
-			platform: "Discord",
-			link: "https://discord.com/",
-			icon: <DiscordIcon />,
-		},
-		{
-			platform: "X",
-			link: "https://x.com/",
-			icon: <XIcon />,
-		},
-		{
-			platform: "YouTube",
-			link: "https://www.youtube.com/",
-			icon: <YouTubeIcon />,
-		},
-		{
-			platform: "Twitch",
-			link: "https://www.twitch.tv/",
-			icon: <TwitchIcon />,
-		},
+		}
 	],
 	categories: [
 		{
@@ -96,19 +64,14 @@ export const CONFIG: SiteConfig = {
 			href: "/posts",
 		},
 		{
-			title: "Technical",
-			page: "tech",
-			href: "/posts/tech",
+			title: "Add-ons",
+			page: "add-ons",
+			href: "/posts/add-ons",
 		},
 		{
-			title: "Food",
-			page: "food",
-			href: "/posts/food",
-		},
-		{
-			title: "Travel",
-			page: "travel",
-			href: "/posts/travel",
+			title: "Blog",
+			page: "blog",
+			href: "/posts/blog",
 		},
 	],
 };
